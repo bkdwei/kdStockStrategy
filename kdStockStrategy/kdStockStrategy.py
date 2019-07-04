@@ -13,10 +13,10 @@ from xlrd import open_workbook
 
 from .dlg_average import dlg_average
 from .fileutil import get_file_realpath
-from .kdStockStrategy_ui import Ui_MainWindow
+from .kdStockStrategy_ui import Ui_mainWindow
 
 
-class kdStockStrategy(QMainWindow, Ui_MainWindow):
+class kdStockStrategy(QMainWindow, Ui_mainWindow):
     def __init__(self):
         super().__init__()
         self.setupUi(self)

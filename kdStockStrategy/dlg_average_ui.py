@@ -92,6 +92,7 @@ class Ui_dlg_average(object):
         self.label_4.setObjectName("label_4")
         self.gridLayout.addWidget(self.label_4, 4, 2, 1, 1)
         self.sp_current_stock = QtWidgets.QSpinBox(dlg_average)
+        self.sp_current_stock.setMaximum(999999999)
         self.sp_current_stock.setObjectName("sp_current_stock")
         self.gridLayout.addWidget(self.sp_current_stock, 3, 3, 1, 1)
 
