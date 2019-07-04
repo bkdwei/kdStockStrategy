@@ -6,11 +6,12 @@ Created on 2019年5月3日
 from os.path import expanduser
 import sqlite3
 import sys
-from xlrd import open_workbook
 
 from PyQt5.QtCore import pyqtSlot
 from PyQt5.QtWidgets import QMainWindow, QApplication, QFileDialog
+from xlrd import open_workbook
 
+from .dlg_average import dlg_average
 from .fileutil import get_file_realpath
 from .kdStockStrategy_ui import Ui_MainWindow
 
@@ -102,7 +103,12 @@ class kdStockStrategy(QMainWindow, Ui_MainWindow):
 
         for record in records:
             pass
-        # TODO
+
+    @pyqtSlot()
+    def on_action_average_triggered(self):
+        print("g")
+        self.dlg_average = dlg_average()
+        self.dlg_average.show()
 
 
 def main():

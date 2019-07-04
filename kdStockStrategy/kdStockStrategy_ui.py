@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file '/home/bkd/pyqt/kdStockStrategy/kdStockStrategy/kdStockStrategy.ui'
+# Form implementation generated from reading ui file 'D:/dev/workspace/kdStockStrategy/kdStockStrategy\kdStockStrategy.ui'
 #
 # Created by: PyQt5 UI code generator 5.11.3
 #
@@ -60,12 +60,18 @@ class Ui_MainWindow(object):
         self.le_min_price.setObjectName("le_min_price")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 594, 28))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 594, 23))
         self.menubar.setObjectName("menubar")
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
         self.statusbar.setObjectName("statusbar")
         MainWindow.setStatusBar(self.statusbar)
+        self.toolBar = QtWidgets.QToolBar(MainWindow)
+        self.toolBar.setObjectName("toolBar")
+        MainWindow.addToolBar(QtCore.Qt.TopToolBarArea, self.toolBar)
+        self.action_average = QtWidgets.QAction(MainWindow)
+        self.action_average.setObjectName("action_average")
+        self.toolBar.addAction(self.action_average)
 
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
@@ -85,4 +91,6 @@ class Ui_MainWindow(object):
         self.le_max_price.setText(_translate("MainWindow", "4.3"))
         self.label_6.setText(_translate("MainWindow", "最低价"))
         self.le_min_price.setText(_translate("MainWindow", "2.5"))
+        self.toolBar.setWindowTitle(_translate("MainWindow", "toolBar"))
+        self.action_average.setText(_translate("MainWindow", "平均价策略"))
 
